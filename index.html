@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="HSB Food Cart - Fresh, hot and delicious street food. Order momo and more.">
+<title>HSB Food Cart | Fresh • Hot • Delicious</title>
+<style>
+:root{--red:#d71920;--dark:#171717;--cream:#fff8ef;--gold:#ffb300;--white:#fff;--muted:#666}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:var(--dark);background:var(--cream);line-height:1.5}
+a{text-decoration:none;color:inherit}
+header{position:sticky;top:0;z-index:20;background:#111;color:#fff;box-shadow:0 2px 12px #0003}
+.nav{max-width:1100px;margin:auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:28px;font-weight:900;color:#fff}.logo span{color:var(--gold)}
+nav a{margin-left:20px;font-weight:700;font-size:14px}
+.hero{background:linear-gradient(135deg,#171717 0%,#2b0909 55%,#d71920 100%);color:#fff}
+.hero-inner{max-width:1100px;margin:auto;padding:75px 20px 80px;display:grid;grid-template-columns:1.2fr .8fr;gap:35px;align-items:center}
+.badge{display:inline-block;background:var(--gold);color:#111;padding:7px 13px;border-radius:30px;font-weight:800;margin-bottom:15px}
+h1{font-size:clamp(42px,7vw,72px);line-height:.95;margin-bottom:18px}
+.hero p{font-size:19px;color:#eee;max-width:620px}
+.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}
+.btn{display:inline-block;padding:13px 20px;border-radius:10px;font-weight:800;border:2px solid transparent}
+.btn-red{background:var(--red);color:#fff}.btn-light{background:#fff;color:#111}.btn-outline{border-color:#fff;color:#fff}
+.hero-card{background:#ffffff12;border:1px solid #ffffff30;border-radius:24px;padding:35px;text-align:center}
+.hero-card .emoji{font-size:100px}.hero-card h2{font-size:28px;margin:8px 0}.hero-card p{font-size:15px}
+section{max-width:1100px;margin:auto;padding:65px 20px}
+.section-title{text-align:center;font-size:36px;margin-bottom:10px}.section-sub{text-align:center;color:var(--muted);margin-bottom:30px}
+.menu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.item{background:#fff;border-radius:18px;padding:22px;box-shadow:0 4px 18px #00000010;border:1px solid #eee}
+.item-top{display:flex;justify-content:space-between;gap:10px;align-items:start}.item h3{font-size:21px}.price{font-weight:900;color:var(--red);font-size:20px;white-space:nowrap}
+.item p{color:var(--muted);font-size:14px;margin:8px 0 15px}.order-small{display:inline-block;background:#111;color:#fff;padding:8px 12px;border-radius:8px;font-size:13px;font-weight:800}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.feature{background:#fff;padding:25px;border-radius:18px;text-align:center}.feature b{display:block;font-size:20px;margin:8px}.feature span{font-size:35px}
+.about{background:#111;color:#fff;max-width:none}.about-inner{max-width:1100px;margin:auto;padding:65px 20px;display:grid;grid-template-columns:1fr 1fr;gap:40px}.about p{color:#ddd;margin-top:12px}
+.contact{background:#fff}.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.contact-box{padding:25px;border-radius:16px;background:var(--cream);text-align:center}.contact-box b{display:block;margin-bottom:6px;font-size:18px}
+footer{background:#111;color:#bbb;text-align:center;padding:25px 20px;font-size:14px}.float{position:fixed;right:18px;bottom:18px;background:#25D366;color:#fff;padding:14px 18px;border-radius:50px;font-weight:900;box-shadow:0 4px 15px #0004;z-index:30}
+@media(max-width:800px){nav{display:none}.hero-inner,.about-inner{grid-template-columns:1fr}.hero-card{display:none}.menu-grid,.features,.contact-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){section{padding:48px 16px}.menu-grid,.features,.contact-grid{grid-template-columns:1fr}.nav{padding:12px 16px}.hero-inner{padding:55px 16px}.buttons .btn{width:100%;text-align:center}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a class="logo" href="#">HSB <span>Food Cart</span></a>
+    <nav>
+      <a href="#menu">Menu</a><a href="#about">About</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <div class="badge">🔥 Fresh • Hot • Delicious</div>
+      <h1>HSB<br>Food Cart</h1>
+      <p>Delicious, freshly prepared street food made for momo lovers. Great taste, great value and quick service.</p>
+      <div class="buttons">
+        <a class="btn btn-red" href="#menu">View Menu</a>
+        <a class="btn btn-light" href="https://wa.me/919999999999?text=Hi%20HSB%20Food%20Cart%2C%20I%20want%20to%20place%20an%20order." target="_blank">Order on WhatsApp</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="emoji">🥟</div>
+      <h2>Hot Momos!</h2>
+      <p>Steamed, saucy and full of flavour.</p>
+    </div>
+  </div>
+</section>
+
+<section id="menu">
+  <h2 class="section-title">Our Menu</h2>
+  <p class="section-sub">Popular HSB favourites — update prices/items anytime.</p>
+  <div class="menu-grid">
+    <article class="item"><div class="item-top"><h3>Chicken Momo</h3><div class="price">₹60</div></div><p>6 pcs • Fresh chicken momo served hot.</p><a class="order-small" href="https://wa.me/919999999999?text=I%20want%206%20pcs%20Chicken%20Momo">Order</a></article>
+    <article class="item"><div class="item-top"><h3>Chicken Afghani Momo</h3><div class="price">₹99</div></div><p>6 pcs • Creamy, rich and spicy Afghani-style momo.</p><a class="order-small" href="https://wa.me/919999999999?text=I%20want%20Chicken%20Afghani%20Momo">Order</a></article>
+    <article class="item"><div class="item-top"><h3>Chicken Jhol Momo</h3><div class="price">₹—</div></div><p>6 pcs • Momo served with flavourful jhol.</p><a class="order-small" href="https://wa.me/919999999999?text=I%20want%20Chicken%20Jhol%20Momo">Order</a></article>
+    <article class="item"><div class="item-top"><h3>More Momo</h3><div class="price">₹—</div></div><p>Add your next momo variety and price here.</p><a class="order-small" href="#contact">Ask</a></article>
+    <article class="item"><div class="item-top"><h3>Combo</h3><div class="price">₹—</div></div><p>Create your best-selling food cart combo here.</p><a class="order-small" href="#contact">Ask</a></article>
+    <article class="item"><div class="item-top"><h3>Special</h3><div class="price">₹—</div></div><p>Add your daily or signature special here.</p><a class="order-small" href="#contact">Ask</a></article>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">Why HSB?</h2>
+  <p class="section-sub">Simple food, made with care.</p>
+  <div class="features">
+    <div class="feature"><span>🥟</span><b>Freshly Made</b><p>Prepared fresh for every customer.</p></div>
+    <div class="feature"><span>🌶️</span><b>Full of Flavour</b><p>Bold sauces and delicious seasoning.</p></div>
+    <div class="feature"><span>💰</span><b>Great Value</b><p>Tasty street food at pocket-friendly prices.</p></div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="about-inner">
+    <div><h2>About HSB Food Cart</h2><p>HSB Food Cart brings tasty, affordable street food to your neighbourhood. Our focus is on fresh ingredients, hot food and flavours customers love.</p></div>
+    <div><h2>Perfect for a quick bite</h2><p>Whether you're grabbing a plate of momo with friends or ordering a quick snack, HSB is here to serve it hot.</p></div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2 class="section-title">Visit & Order</h2>
+  <p class="section-sub">Replace the details below with your actual business information before publishing.</p>
+  <div class="contact-grid">
+    <div class="contact-box"><b>📍 Location</b><span>Your Food Cart Location<br>Howrah, West Bengal</span></div>
+    <div class="contact-box"><b>📞 Phone</b><span>+91 99999 99999</span></div>
+    <div class="contact-box"><b>🕒 Opening Hours</b><span>Update your opening hours</span></div>
+  </div>
+  <div class="buttons" style="justify-content:center;margin-top:25px">
+    <a class="btn btn-red" href="https://wa.me/919999999999" target="_blank">WhatsApp Us</a>
+    <a class="btn" style="background:#eee" href="tel:+919999999999">Call Now</a>
+  </div>
+</section>
+</main>
+
+<a class="float" href="https://wa.me/919999999999?text=Hi%20HSB%20Food%20Cart%2C%20I%20want%20to%20order." target="_blank">💬 WhatsApp Order</a>
+
+<footer>© 2026 HSB Food Cart • Fresh • Hot • Delicious</footer>
+</body>
+</html>
